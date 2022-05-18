@@ -1,0 +1,16 @@
+# Job: test
+# Query: mol1A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  mol2-A  3.6  1.8   33    36   39   MOLECULE: BOVINE PANCREATIC POLYPEPTIDE;                             
+
+# Pairwise alignments
+
+No 1: Query=mol1A Sbjct=mol2A Z-score=3.6
+
+DSSP  LLLLLLLLLLLLLHHHHHHHHHHHHHHHHHHLLlll
+Query GPSQPTYPGDDAPVEDLIRFYDNLQQYLNVVTRhry   36
+ident  |  | |||| |  |        |  | |  ||   
+Sbjct APLEPEYPGDNATPEQMAQYAAELRRYINMLTRpry   36
+DSSP  LLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHLLlll
+
+
