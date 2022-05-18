@@ -94,54 +94,6 @@ def reemovNestings(l):
     return output
 
 
-# Input_Protein = str(input_protein_list2[0].lower() + input_protein_list2[1])
-# List_Wild_PDB2 = reemovNestings(List_Wild_PDB1)
-# Dali_Input = []
-# for i in range(len(List_Wild_PDB1)):
-#     Dali_Input.append(str(List_Wild_PDB2[i][0] + List_Wild_PDB2[i][1]))
-# # print(Dali_Input)
-# # for i in range(len(Dali_Input)):
-#
-#
-# br = RoboBrowser(history=True, parser="html.parser")
-# br.open('http://ekhidna2.biocenter.helsinki.fi/dali/index.html#tabs-2')
-# upload_form = br.get_forms()[2]
-# file_links = []
-# for pdb in Dali_Input:
-#     upload_form['cd1'].value = "{}".format(Input_Protein)
-#     upload_form['cd2'].value = "{}".format(pdb)
-#     br.submit_form(upload_form)
-#     url = br.url
-#     file_links.append(url)
-# links_Dali = []
-# for link in file_links:
-#     s = link.replace("index", "{}".format(Input_Protein))
-#     links_Dali.append(s)
-# # print(links_Dali)
-# time.sleep(60)
-# alignment = [[[] for _ in range(2)] for _ in range(len(Dali_Input))]
-# end_alignment = [[[] for _ in range(2)] for _ in range(len(Dali_Input))]
-# for i in range(len(links_Dali)):
-#     f = urllib.request.urlopen(links_Dali[i])
-#     s = f.read().decode('utf-8')
-#     try:
-#         start = "back to top"
-#         end = '<HR>'
-#         result = ((s.split(start))[1].split(end)[0])
-#         w = result.splitlines()
-#         for j in range(len(w)):
-#             if 'Query' in w[j]:
-#                 alignment[i][0].append(w[j].split()[1])
-#                 end_alignment[i][0].append(w[j].split()[2])
-#             if 'Sbjct' in w[j]:
-#                 alignment[i][1].append(w[j].split()[1])
-#                 end_alignment[i][1].append(w[j].split()[2])
-#             # if len(w[j]) == 0:
-#             #     del Dali_Input[i]
-#             #     del alignment[i]
-#             #     del end_alignment[i]
-#     except:
-#         continue
 Input_Protein = str(input_protein_list2[0].lower() + input_protein_list2[1])
 List_Wild_PDB2 = reemovNestings(List_Wild_PDB1)
 Dali_Input = []
